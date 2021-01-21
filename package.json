@@ -1,0 +1,15 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "TODO application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "script": "nodemon index.js"
+  },
+  "author": "Shishir singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

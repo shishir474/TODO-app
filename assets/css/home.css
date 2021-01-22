@@ -1,0 +1,119 @@
+#outer{
+    border: 2px solid #320884;
+    margin:10px auto;
+    position: relative;
+    width: 75%;
+    background-color:#320884;
+    color:white;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 5px grey;
+
+}
+#topheading{
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    background-color: lightpink;
+}
+#topheading:hover{
+  
+}
+.color{
+    color:greenyellow;
+}
+#category{
+    display: inline-block;
+    width: 49%;
+    float: left;
+    padding-bottom: 25px;
+   padding-right:5px;
+   border:1px solid grey;
+   border-top-width: 0px;
+   border-left-width: 0px;
+}
+#category:hover{
+    background-color:#ff9800;
+}
+#category h3{
+    padding-left: 10px;
+    font-family: sans-serif;
+    color:#e6fb36;
+}
+#category b{
+    padding-left: 10px;
+}
+#date{
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+#date:hover{
+    background-color:#ff9800;
+}
+#date h3{
+    padding-left: 10px;
+    font-family: sans-serif;
+    color:#e6fb36;
+}
+#date input{
+    padding-left: 10px;
+    margin-left:10px;
+}
+#description{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+#desc{
+    padding-bottom: 26px;
+    border-bottom:1px solid grey;
+    padding-left:10px;
+}
+#desc h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    color:#e6fb36;
+}
+.fields{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+#taskcategory{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    padding:10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    background-color: #03A9F4;;
+    color:white;
+}
+#addtask{
+    color:white;
+    background-color:#15e62bd4;
+    padding: 13px 50px;
+    margin:20px auto;
+    width: 200px; 
+    border-radius: 40%;
+    display: block;
+}
+#addtask:hover{
+    background-color:#ff9800;
+}
+#deletetask{
+    color:white;
+    background-color: red;
+    padding:10px 5px;
+    margin-left:5px;
+    text-align: center;
+    position: relative;
+    left:40%;
+    /* position: absolute; */
+}
+.fields b{
+    text-transform: capitalize;
+    color:#ffc107;
+}
+#buttons{
+    text-align:end;
+    margin-top:10px;
+} 

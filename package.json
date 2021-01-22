@@ -4,12 +4,15 @@
   "description": "TODO application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "script": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "Shishir singh",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13",
+    "nodemon": "^2.0.7"
   }
 }

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>TODO app</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/home.css">
+
+    </head>
+    <body>
+    <div id="outer">
+        <h1 id="topheading">TODO APP</h1>
+
+        <div id="description">
+            <div>
+                <form action="/createtask" method="POST">
+                    <div id="desc">
+                        <h3>DESCRIPTION</h3>
+                        <input type="text" name="taskname" placeholder="enter task" required>
+                    </div>
+                    <div id="category">
+                            <h3>CATEGORY</h3>
+                            <b>Choose a category &nbsp; &nbsp;</b> 
+                            <select name="category">
+                                <option> Personal </option>
+                                <option selected> work </option>
+                                <option> school </option>
+                                <option> cleaning </option>
+                                <option> other </option>
+                            </select>
+                    </div>
+            
+                    <div id="date">
+                            <h3>Due Date</h3>
+                            <input type="date" name="date" required>
+                    </div>
+            
+                        <button id="addtask"> <i class="fas fa-plus"></i> ADD TASK </button>
+                </form>
+            </div>
+        </div>
+       
+        <%for (let i of task_list) {%>            
+          <a href="/deletetask/?id=<%=i._id %>"> <i class="far fa-window-close fields color"></i> </a>
+          <span class="fields">  <b><%= i.taskname %></b> </span>  
+          <span> <div id="taskcategory" class="fields"> <%= i.category %></div> </span>
+          <p class="fields">  <%= i.date %></p>
+        <% } %>
+  
+            
+            <!-- <button id="deletetask"> <i class="far fa-trash-alt"></i> DELETE TASKS </button> -->
+        
+    </div>
+
+
+        
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>

@@ -53,6 +53,7 @@ app.get('/',function(req,res){
     
 });
 
+// callback function for creating task
 app.post('/createtask',function(req,res){
    
     Todo.create({
@@ -69,6 +70,7 @@ app.post('/createtask',function(req,res){
     });
 });
 
+// callback function for deleting task
 app.get('/deletetask',function(req,res){
     var id = req.query.id;
     Todo.findByIdAndDelete(id,function(err){

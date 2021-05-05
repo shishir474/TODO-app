@@ -12,10 +12,7 @@
 #topheading{
     text-align: center;
     text-shadow: 2px 2px 5px red;
-    background-color: lightpink;
-}
-#topheading:hover{
-  
+    background-color: #03a9f4;
 }
 .color{
     color:greenyellow;
@@ -26,7 +23,7 @@
     float: left;
     padding-bottom: 25px;
    padding-right:5px;
-   border:1px solid grey;
+   /* border:1px solid grey; */
    border-top-width: 0px;
    border-left-width: 0px;
 }
@@ -41,11 +38,18 @@
 #category b{
     padding-left: 10px;
 }
+@media screen and (max-width: 600px){
+    #dropdown{
+        position: relative;
+         left: 0.2rem;
+         top: 0.8rem;
+    }
+}
 #date{
     display: inline-block;
     width: 50%;
     padding-bottom: 20px;
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
 }
 #date:hover{
     background-color:#ff9800;
@@ -65,7 +69,7 @@
 }
 #desc{
     padding-bottom: 26px;
-    border-bottom:1px solid grey;
+    /* border-bottom:1px solid grey; */
     padding-left:10px;
 }
 #desc h3{
@@ -107,7 +111,6 @@
     text-align: center;
     position: relative;
     left:40%;
-    /* position: absolute; */
 }
 .fields b{
     text-transform: capitalize;
